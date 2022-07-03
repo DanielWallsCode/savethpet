@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding: 13px;
+    width: 99%;
+}
+
+.PRIMERA{
+  height: 650px;
+  background: rgb(161, 250, 250);
+  width: 100%;
+}
+
+nav a{
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+header .logo h2{
+    font-size: 30px;
+    text-transform: uppercase;  
+}
+
+.contenedor{
+    width: 90%;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.contenedor .tect{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .tect h1{
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+    background: rgb(132, 196, 238);
+    font-weight: 100;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.contenedor .IMG img{
+    border-radius: 4px;
+    width: 420px;
+}
+
+.contenedor .IMG img:hover{
+    box-shadow: 3px 3px 3px 3px rgb(60, 187, 226);
+}
+
+.card {
+    box-shadow: 1px 1px 1px 1px rgb(165, 164, 164);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .vide{
+    display: flex;
+    margin: 60px;
+    justify-content: center;
+  }
+
+  .vide video{
+    height: 340px;
+    border-radius: 4px;
+  }
+
+  #h2{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  footer .fo{
+    width: 100%;
+  }
+
+  footer .fo h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  svg{
+    margin-top: -230px;
+    width: 100%;
+  }
+
+  @media (max-width: 600px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor{
+      flex-direction: column;
+    }
+    .vide video{
+      margin: auto;
+      width: 310px;
+      margin-left: 50px;
+    }
+    .contenedor .IMG img{
+      width: 320px;
+    }
+     svg{
+      display: none;
+     }
+
+     .PRIMERA{
+      background: none;
+     }
+
+     #h2{
+      margin-top: 20px;
+     }
+   
+  }
